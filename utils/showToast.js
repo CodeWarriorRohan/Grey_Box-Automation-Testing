@@ -20,7 +20,7 @@ import {View, Text, StyleSheet} from 'react-native';
 import Toast from 'react-native-toast-message';
 
 // Function to trigger the toast
-const showToast = ({type, message, duration = 5000, position = 'top'}) => {
+const showToast = ({type, message, duration = 2000, position = 'top'}) => {
   Toast.show({
     type,
     text1: message,

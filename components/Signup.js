@@ -26,7 +26,7 @@ const SignupScreen = ({navigation}) => {
     if (name.length < 2) {
       showToast({
         type: 'error',
-        message: 'Full Name must be at least 2 letters.',
+        message: 'Full Name must be at least of 2 letters.',
       });
       return;
     }
@@ -49,7 +49,7 @@ const SignupScreen = ({navigation}) => {
     }
 
     if (password !== confirmPassword) {
-      showToast({type: 'error', message: 'Passwords do not match.'});
+      showToast({type: 'error', message: 'Password and Confirm Password do not match.'});
       return;
     }
 
