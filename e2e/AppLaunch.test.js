@@ -236,7 +236,7 @@ describe('App Launch', () => {
 
     // Tap elsewhere to remove keyboard focus
     await element(by.id('signupScreen')).tap();
-    await element(by.id('signupScreen')).tap();
+    await element(by.id('signupButton')).tap();
     await waitFor(element(by.text('Error'))).toBeVisible();
     await expect(
       element(by.text('Please enter a valid email address.')),
