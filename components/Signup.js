@@ -26,7 +26,7 @@ const SignupScreen = ({navigation}) => {
     if (name.length < 2) {
       showToast({
         type: 'error',
-        message: 'Full Name must be at least of 2 letters.',
+        message: 'Full Name must be at least 2 letters.',
       });
       return;
     }
@@ -43,7 +43,7 @@ const SignupScreen = ({navigation}) => {
       showToast({
         type: 'error',
         message:
-          'Password must be at least 8 characters long and include:\n- 1 uppercase letter\n- 1 number\n- 1 special character.',
+          'Password must be at least 8 characters long and include 1 uppercase letter, 1 number, and 1 special character.',
       });
       return;
     }
@@ -56,7 +56,7 @@ const SignupScreen = ({navigation}) => {
     if (!/^\d{10}$/.test(mobile)) {
       showToast({
         type: 'error',
-        message: 'Mobile Number must be exactly 10 digits.',
+        message: 'Mobile number must be of 10 digits.',
       });
       return;
     }

@@ -313,7 +313,7 @@ describe('App Launch', () => {
     await element(by.id('signupButton')).tap();
     await waitFor(element(by.text('Error'))).toBeVisible();
     await expect(
-      element(by.text('Password and Confirm Password both must be match.')),
+      element(by.text('Password and Confirm Password do not match.')),
     ).toBeVisible();
   });
 
